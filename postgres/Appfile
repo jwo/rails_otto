@@ -5,4 +5,5 @@ application {
 
 customization "postgres" {
     image = "postgres:latest"
+    run_args = "-e POSTGRES_PASSWORD=password"
 }

@@ -1,0 +1,9 @@
+application {
+    name = "postgres"
+    type = "docker-external"
+}
+
+customization "postgres" {
+    image = "postgres:latest"
+    run_args = "--name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres"
+}
